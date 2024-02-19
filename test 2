@@ -1,0 +1,40 @@
+1.
+возрасты = {"Мурат": 24, "Эржан": 21, "Карина": 24, "Алтынай": 17, "Айбек": 16}
+for имя, возраст in возрасты.items():
+    if возраст >= 17:
+        print(f"{имя} допущен в ночной клуб.")
+    else:
+        print(f"{имя} не допущен в ночной клуб.")
+
+       
+ 2.
+ a = {'key1': {'inner_key1': 'value1', 'inner_key2': 'value2'},
+     'key2': {'inner_key3': 'value3', 'inner_key4': 'value4'}}
+new_a = {}
+for outer_key, inner_dict in a.items():
+    for inner_key, inner_value in inner_dict.items():
+        new_a[inner_key] = inner_value
+print(new_a)
+
+
+3. 
+fruit_prices = {'apple': 3, 'banana': 5, 'orange': 4, 'kiwi': 6, 'pear': 2}
+fruit_prices = {fruit: price for fruit, price in fruit_prices.items() if price % 2 != 0}
+print(fruit_prices)
+
+
+5. квадраты = {число: число ** 2 for число in range(1, 11)}
+print(квадраты)
+
+
+
+7. 
+dict_ = {'a': 5, 'b': 3, 'c': 8, 'd': 2}
+sorted_dict = {k: v for k, v in sorted(dict_.items(), key=lambda item: item[1], reverse=True)}
+print(sorted_dict)
+
+
+10.
+list_ = [-4, -3, -2, -1, 0, 1, 2, 3, 4]
+int_list = [1 if число < 0 else число for число in list_]
+print(int_list)
