@@ -1,9 +1,0 @@
-x = int(input())
-y = int(input())
-if x%y == 0:
-    print("%d делится на %d" % (x,y))
-    print("Частное: %d" % (x//y))
-else:
-    print("%d не делится на %d" % (x,y))
-    print("Частное: %d" % (x//y))
-    print("Остаток: %d" % (x%y))

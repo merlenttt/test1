@@ -99,17 +99,17 @@
 # print(db)
 # print(login('katana', '12amsdbmnasdb'))
 
-'==============lambda============== '
+# '==============lambda============== '
 
-def sum_(x,y):
-    return x + y
+# def sum_(x,y):
+#     return x + y
 
-sum_1(10,29)
-sum_1(1,5)
-sum_1(20,1)
+# sum_1(10,29)
+# sum_1(1,5)
+# sum_1(20,1)
 
-sum_2 = lambda x, y: x + y
-print(sum_2(10, 5))
+# sum_2 = lambda x, y: x + y
+# print(sum_2(10, 5))
 
 
 

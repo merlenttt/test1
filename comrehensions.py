@@ -1,73 +1,73 @@
-'====================Comprehensions===================='
-# Генератор, с помощью которого мы можем создавать последовательности используя цикл for в одну строку
+# '====================Comprehensions===================='
+# # Генератор, с помощью которого мы можем создавать последовательности используя цикл for в одну строку
 
-# елемент for елемент in послеедовательность
-# елемент for елемент in послеедовательность if фильтр
-# елемент1 if условие1 else елемент2 for елемент in последовательность
+# # елемент for елемент in послеедовательность
+# # елемент for елемент in послеедовательность if фильтр
+# # елемент1 if условие1 else елемент2 for елемент in последовательность
 
-compr_ = [i for i in range(6)
-    print(compr_)]
+# compr_ = [i for i in range(6)
+#     print(compr_)]
 
-compr_1 = []
-for i in range(6)
-    ----
+# compr_1 = []
+# for i in range(6)
+#     ----
 
-# list_ =[12,None, hi, 123, 1,6,2,True, 0, False]
+# # list_ =[12,None, hi, 123, 1,6,2,True, 0, False]
 
-# new_list_ = [[i for i in list_ if bool (i)]]
-# print(new_list_)
+# # new_list_ = [[i for i in list_ if bool (i)]]
+# # print(new_list_)
 
-# new_list_2 = 2[i if bool (i) else 0 for i in list_]
-# print(new_list_2)
+# # new_list_2 = 2[i if bool (i) else 0 for i in list_]
+# # print(new_list_2)
+
+# # new_list_2 = []
+# # for i in list_:
+# #     if bool(i)
+# #         new_list_2.append(i)
+# #     else:
+# #         new_list_2.append(0)
+# # print(new_list_2)
+    
+
+# list_ = [12,3,0,34,9,7]
+# new_list_ = --
+
+
+
+# list_ = [1, 'hi' , 123, 'hello world', True, 'makers', False]
 
 # new_list_2 = []
 # for i in list_:
-#     if bool(i)
+#     if type(i) == str:
 #         new_list_2.append(i)
-#     else:
-#         new_list_2.append(0)
-# print(new_list_2)
-    
 
-list_ = [12,3,0,34,9,7]
-new_list_ = --
+# new_list = [i for i in list_ if type(i) == str]
+# print(new_list)
 
 
 
-list_ = [1, 'hi' , 123, 'hello world', True, 'makers', False]
+# '===================Виды comprehension=================='
+# # list comprehension -> []
+# # dict comprehension -> {:}
+# # set comprehension -> {}
+# # comprehension генератор -> ()
+# compr_ = (i for i in range(11))
+# print(compr_)
+# 'DICT COMPREHENSION'
+# {1:1, 2:4, 3:9, 4:16}
 
-new_list_2 = []
-for i in list_:
-    if type(i) == str:
-        new_list_2.append(i)
+# dict_ = {i:i**2 for i in range(1,5)}
+# print(dict_)
 
-new_list = [i for i in list_ if type(i) == str]
-print(new_list)
+# {'a':1, 'b':2, 'c':3}
+# new_dict_ ---
 
+# new_dict_2 = {v**2:v for v in dict_.values()}
+# print(new_dict_2)
 
-
-'===================Виды comprehension=================='
-# list comprehension -> []
-# dict comprehension -> {:}
-# set comprehension -> {}
-# comprehension генератор -> ()
-compr_ = (i for i in range(11))
-print(compr_)
-'DICT COMPREHENSION'
-{1:1, 2:4, 3:9, 4:16}
-
-dict_ = {i:i**2 for i in range(1,5)}
-print(dict_)
-
-{'a':1, 'b':2, 'c':3}
-new_dict_ ---
-
-new_dict_2 = {v**2:v for v in dict_.values()}
-print(new_dict_2)
-
-'SET_COMPREHENSION'
-set_ ={i for i in range (11) if i %2 == 0}
-print(set_)
+# 'SET_COMPREHENSION'
+# set_ ={i for i in range (11) if i %2 == 0}
+# print(set_)
 
 
 # set_1 = {12, 34, 1, 'hi', 'hello', 123, 'None'}
